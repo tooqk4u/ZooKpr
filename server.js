@@ -6,9 +6,9 @@ const app = express();
 
 //MIDDLEWARE
 
-//parse incoming strings or array data
-app.use(express.urlencoded({ extended:true}));
-//parse incoming JSON data
+// parse incoming string or array data
+app.use(express.urlencoded({ extended: true }));
+// parse incoming JSON data
 app.use(express.json());
 
 function filterByQuery(query, animalsArray) {
